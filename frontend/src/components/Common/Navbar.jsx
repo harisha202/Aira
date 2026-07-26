@@ -1,8 +1,6 @@
 import AiraLogo from '../AiraLogo'
 import SettingsLogo from '../Settings/SettingsLogo'
-import { ROUTES } from '../../utils/constants'
-
-function Navbar({ navigate, user, onLogout }) {
+function Navbar({ user, onLogout }) {
   return (
     <header className="app-navbar">
       <div className="app-brand">
