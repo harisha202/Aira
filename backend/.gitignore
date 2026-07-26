@@ -1,0 +1,24 @@
+# Environment variables & Secrets
+.env
+.env.*
+*.env
+!.env.example
+
+# Caches and Python bytecodes
+.pytest_cache/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Database & Logs
+*.db
+*.sqlite
+*.sqlite3
+aria.db
+*.log

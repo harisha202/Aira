@@ -1,12 +1,42 @@
+# Environment variables & Secrets (Safer side: ignore all .env files except examples)
 .env
 .env.*
+*.env
 !.env.example
 !frontend/.env.development
+!frontend/.env.example
+!backend/.env.example
+
+# Dependency & Cache directories
+node_modules/
+**/node_modules/
+.pytest_cache/
+**/.pytest_cache/
 __pycache__/
+**/__pycache__/
 *.pyc
-*.log
+*.pyo
+*.pyd
+
+# Virtual environments
 .venv/
-backend/.venv/
+**/.venv/
+venv/
+**/venv/
+
+# Databases & Logs
 *.db
-frontend/dist/
-frontend/node_modules/
+*.sqlite
+*.sqlite3
+aria.db
+**/aria.db
+*.log
+logs/
+**/logs/
+
+# Build outputs & OS files
+dist/
+**/dist/
+.DS_Store
+Thumbs.db
+
